@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+
+h1 {
+  font-family: 'CoreCircus', sans-serif;
+  font-size: 6vw;
+  text-align: left;
+  line-height: 1;
+  color: rgba(45, 45, 45, 1);
+  letter-spacing: -0.5rem;
+}
+
+h2 {
+  font-family: 'CoreCircus', sans-serif;
+  font-size: 2vw;
+  text-align: left;
+  line-height: 1;
+  color: rgba(45, 45, 45, 1);
+  letter-spacing: -0.5rem;
+}
+
+.invertColor {
+  filter: invert(100%);
+}
+.home_div {
+  margin: 2px;
+  height: 780px;
+  width: 1518px;
+  /* background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% ); */
+}
+
+.wheel_div {
+  margin-left: 10px;
+  margin-bottom: 8px;
+  width: 400px;
+  height: 340px;
+  border-style: double;
+  border-width: 7px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 20px;
+}
+
+.menu_div {
+  margin-left: 10px;
+  width: 400px;
+  height: 426px;  
+  border-style: double;
+  border-width: 7px;
+  position: fixed;
+  top: 2px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+}
+
+.menu_links {
+  padding: 50px;
+}
+
+.menu_pic {
+  height: 415px;
+}
+
+.zooming_title {
+  margin-right: 3px;
+  margin-top: 5px;
+  padding: 6px 6px;
+  padding-left: 40px;
+  border-style: double;
+  border-bottom-style: none;
+  border-width: 7px;
+  border-radius: 20px;
+}
+
+.letters_div {
+  height: 450px;
+  width: 1020px;
+  position: absolute;
+  top: 4px;
+  left: 488px;
+  border-style: dotted;
+  border-width: 7px;
+  border-radius: 20px;
+}
+
+.letters_h1 {
+  font-family: 'Chakra Petch', sans-serif;
+  display: flex;
+  flex: start;
+  padding-left: 100px;
+  font-size: 3vw !important;
+  letter-spacing: 0rem !important;
+}
+
+.dev_div {
+  font-family: caveat;
+  position: absolute;
+  left: 410px;
+  width: 80px;
+  height: 770px;
+  border-top: 0;
+  border-right: 0;
+  border-color: lightcoral;
+  border-width: 7px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.contactForm_div {
+  width: 1030px;
+  height: 310px;
+  position: absolute;
+  right: 3px;
+  bottom: 2px;
+  margin-top: -2px;
+  border-style: double;
+  border-width: 7px;
+  border-radius: 20px;
+}
+
+.contact_letters {
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  /* animation: ping1 30s linear infinite; */
+}
+
+@keyframes ping1 {
+  0% {
+    transform: scale(3);
+    opacity: 0;
+  }
+  8%{
+    transform: scale(3);
+    opacity: 0;
+  }
+  15%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.contact_letters_c {
+  font-size: 250px;
+  position: absolute;
+  left: 80px;
+  bottom: 20px;
+}
+
+.techno_div {
+  margin: 2px;
+  height: 740px;
+  width: 1028px;
+  display: block;
+}
+
+.techno_pics {
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+.projectsSection_div {
+  margin: 2px;
+  height: 740px;
+  width: 1028px;
+}
+
+.contactSection_div {
+  margin: 2px;
+  height: 740px;
+  width: 1028px;
+}
+
+/* ANIMATION SCROLL SPINING */
+.svgWheel {
+  position: fixed;
+  bottom: 10%;
+  left: 8%;
+  margin-top: -50px;
+  margin-left: -50px;
+
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  min-height: 500vh;
+}
+
+/* LETTERS */
+
+.inicialLetter {
+  animation: inicialLetter 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes inicialLetter {
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+/* PROJECTS MOVE BACKkGROUND */
+.backGrounder {
+  overflow: auto;
+  height: 400px;
+  opacity: 0.8;
+  background: linear-gradient(315deg, rgba(71,100,74,1) 3%, rgba(30,102,176,1) 38%, rgba(18,178,196,1) 68%, rgba(75,15,15,1) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+.wave {
+  overflow: auto;
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 6em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 260px;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  overflow: auto;
+  height: 8em;
+  animation: wave 18s linear reverse infinite;
+  bottom: 280px;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  overflow: auto;
+  bottom: -3.5em;
+  animation: wave 20s -1s reverse infinite;
+  bottom: 260px;
+
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
+#container {
+  margin-right: 3px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 600px;
+  width: 1100px;
+  overflow-x: scroll;
+  scroll-timeline: --squareTimeline y;
+  scroll-timeline: --squareTimeline vertical;
+  position: relative;
+  border-style: double;
+  border-top-style: dotted;
+  border-width: 7px;
+  border-radius: 20px;
+}
+
+#stretcher {
+  height: 1200px;
+  width: 300px;
+}
+
+#square {
+  background-color: deeppink;
+  width: 400px;
+  height: 400px;
+  animation-name: rotateAnimation;
+  animation-duration: 5ms; /* Firefox requires this to apply the animation */
+  animation-timeline: --squareTimeline;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+}
+@keyframes rotateAnimation {
+  0% {
+    transform: translateX(600px) translateY(0px) translateZ(200px)
+      perspective(200px);
+    height: 0px;
+    width: 0px;
+  }
+  5% {
+    transform: translateX(600px) translateY(0px) translateZ(200px)
+      perspective(200px);
+    height: 200px;
+    width: 200px;
+  }
+  25% {
+    transform: translateX(-100px) translateY(-200px) translateZ(100px)
+      perspective(2000px);
+    height: 400px;
+    width: 400px;
+  }
+  100% {
+    transform: translateX(-100px) translateY(-200px) translateZ(100px)
+      perspective(2000px);
+    height: 400px;
+    width: 400px;
+  }
+}
+#square1 {
+  background-color: blue;
+  width: 400px;
+  height: 400px;
+  animation-name: rotateAnimation1;
+  animation-duration: 5ms; /* Firefox requires this to apply the animation */
+  animation-timeline: --squareTimeline;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+}
+@keyframes rotateAnimation1 {
+  0% {
+    transform: translateX(400px) translateY(-100px) translateZ(200px)
+      perspective(200px);
+    height: 0px;
+    width: 0px;
+  }
+  50% {
+    transform: translateX(500px) translateY(300px) translateZ(200px)
+      perspective(200px);
+    height: 0px;
+    width: 0px;
+  }
+  100% {
+    transform: translateX(-500px) translateY(300px) translateZ(0px)
+      perspective(0px);
+    height: 400px;
+    width: 400px;
+  }
+}
+#square2 {
+  background-color: yellow;
+  width: 400px;
+  height: 400px;
+  animation-name: rotateAnimation2;
+  animation-duration: 5ms; /* Firefox requires this to apply the animation */
+  animation-timeline: --squareTimeline;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+}
+@keyframes rotateAnimation2 {
+  0% {
+    transform: translateX(400px) translateY(-100px) translateZ(200px)
+      perspective(200px);
+    height: 0px;
+    width: 0px;
+  }
+  50% {
+    transform: translateX(600px) translateY(200px) translateZ(200px)
+      perspective(200px);
+    height: 0px;
+    width: 0px;
+  }
+  100% {
+    transform: translateX(1200px) translateY(200px) translateZ(0px)
+      perspective(0px);
+    height: 400px;
+    width: 400px;
+  }
+}
+#square3 {
+  background-color: red;
+  width: 400px;
+  height: 400px;
+  animation-name: rotateAnimation3;
+  animation-duration: 5ms; /* Firefox requires this to apply the animation */
+  animation-timeline: --squareTimeline;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+}
+@keyframes rotateAnimation3 {
+  0% {
+    transform: translateX(600px) translateY(-100px) translateZ(200px)
+    perspective(200px);
+  height: 0px;
+  width: 0px;
+  }
+  50% {
+    
+    transform: translateX(1200px) translateY(-100px) translateZ(0px)
+      perspective(0px);
+    height: 400px;
+    width: 400px;
+  }
+  100% {
+    transform: translateX(1200px) translateY(200px) translateZ(0px)
+      perspective(0px);
+    height: 400px;
+    width: 400px;
+  }
+}
+#square4 {
+  background-color: deeppink;
+  width: 400px;
+  height: 400px;
+  animation-name: rotateAnimation4;
+  animation-duration: 5ms; /* Firefox requires this to apply the animation */
+  animation-timeline: --squareTimeline;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+}
+@keyframes rotateAnimation4 {
+  0% {
+    transform: translateX(300px) translateY(-100px) translateZ(200px)
+    perspective(200px);
+  height: 0px;
+  width: 0px;
+  }
+  20% {
+    transform: translateX(300px) translateY(0px) translateZ(200px)
+    perspective(200px);
+  height: 0px;
+  width: 0px;
+  }
+  60% {
+    transform: translateX(1200px) translateY(-50px) translateZ(0px)
+      perspective(0px);
+    height: 400px;
+    width: 400px;
+  }
+  100% {
+    transform: translateX(1200px) translateY(200px) translateZ(0px)
+      perspective(0px);
+    height: 400px;
+    width: 400px;
+  }
+}
+#square5 {
+  background-color: deeppink;
+  width: 400px;
+  height: 400px;
+  animation-name: rotateAnimation5;
+  animation-duration: 5ms; /* Firefox requires this to apply the animation */
+  animation-timeline: --squareTimeline;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+}
+@keyframes rotateAnimation5 {
+  0% {
+    transform: translateX(300px) translateY(-100px) translateZ(200px)
+    perspective(200px);
+  height: 0px;
+  width: 0px;
+  }
+  70% {
+    transform: translateX(500px) translateY(-50px) translateZ(0px)
+      perspective(0px);
+    height: 400px;
+    width: 400px;
+  }
+  100% {
+    transform: translateX(-1200px) translateY(200px) translateZ(0px)
+      perspective(0px);
+    height: 400px;
+    width: 400px;
+  }
+}
+#square6 {
+  background-color: black;
+  width: 400px;
+  height: 400px;
+  animation-name: rotateAnimation6;
+  animation-duration: 5ms; /* Firefox requires this to apply the animation */
+  animation-timeline: --squareTimeline;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+}
+@keyframes rotateAnimation6 {
+  0% {
+    transform: translateX(300px) translateY(-100px) translateZ(200px)
+    perspective(200px);
+  height: 0px;
+  width: 0px;
+  }
+  70% {
+    transform: translateX(500px) translateY(300px) translateZ(0px)
+      perspective(0px);
+    height: 0px;
+    width: 0px;
+  }
+  100% {
+    transform: translateX(-100px) translateY(600px) translateZ(0px)
+      perspective(0px);
+    height: 400px;
+    width: 400px;
+  }
+}
+#square7 {
+  background-color: green;
+  width: 400px;
+  height: 400px;
+  animation-name: rotateAnimation7;
+  animation-duration: 5ms; /* Firefox requires this to apply the animation */
+  animation-timeline: --squareTimeline;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+}
+@keyframes rotateAnimation7 {
+  0% {
+    transform: translateX(300px) translateY(-100px) translateZ(200px)
+    perspective(200px);
+  height: 0px;
+  width: 0px;
+  }
+  70% {
+    transform: translateX(500px) translateY(-50px) translateZ(0px)
+      perspective(0px);
+    height: 0px;
+    width: 0px;
+  }
+  100% {
+    transform: translateX(1200px) translateY(300px) translateZ(0px)
+      perspective(0px);
+    height: 400px;
+    width: 400px;
+  }
+}
+#square8 {
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  animation-name: rotateAnimation8;
+  animation-duration: 5ms; /* Firefox requires this to apply the animation */
+  animation-timeline: --squareTimeline;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+}
+@keyframes rotateAnimation8 {
+  0% {
+    transform: translateX(600px) translateY(200px) translateZ(200px)
+      perspective(200px);
+    height: 0px;
+    width: 0px;
+  }
+  30% {
+    transform: translateX(800px) translateY(120px) translateZ(200px)
+      perspective(200px);
+    height: 0px;
+    width: 0px;
+  }
+  70% {
+    transform: translateX(-600px) translateY(80px) translateZ(0px)
+      perspective(0px);
+    height: 400px;
+    width: 400px;
+  }
+  100% {
+    transform: translateX(1200px) translateY(200px) translateZ(0px)
+      perspective(0px);
+    height: 400px;
+    width: 400px;
+  }
+}
+#squareOk {
+  /* width: 400px;
+  height: 400px; */
+  animation-name: rotateAnimationOk;
+  animation-duration: 5ms; /* Firefox requires this to apply the animation */
+  animation-timeline: --squareTimeline;
+  position: absolute;
+  bottom: 0;
+}
+@keyframes rotateAnimationOk {
+  0% {
+    transform: translateX(200px) translateY(-150px) translateZ(0px)
+       perspective(0px);
+    height: 300px;
+    width: 300px; 
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(-100px) translateY(650px) translateZ(800px)
+      perspective(0px);
+    height: 2000px;
+    width: 2000px;
+    opacity: 0;
+  }
+  21%{
+    transform: translateX(-1200px) translateY(850px) translateZ(800px)
+      perspective(1000px);
+      height: 2000px;
+      width: 2000px;
+      opacity: 0;
+  }
+  100% {
+    transform: translateX(300px) translateY(-350px) translateZ(0px)
+      perspective(0px);
+      height: 2000px;
+      width: 2000px;
+      opacity: 0;
+  }
+}
+/* pascual vila letters */
+
+.letters_h1 {
+  font-family: 'Kalnia';
+  font-size: 8vw;
+  text-align: left;
+  line-height: 1;
+  color: rgba(45, 45, 45, 1);
+  letter-spacing: -0.5rem;
+  animation: ping 30s linear infinite;
+}
+
+.letters_h1:before {
+  content: attr(data-heading);
+  position: absolute;
+  overflow: hidden;
+  color: #fc0;
+  z-index: 5;
+  text-shadow: none;
+  left: 38%;
+  text-align: left;
+  animation: flicker 3s linear infinite;
+}
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+      opacity: 0.99;
+      text-shadow: -1px -1px 0 rgba(255, 255, 255, .4), 1px -1px 0 rgba(255, 255, 255, .4), -1px 1px 0 rgba(255, 255, 255, .4), 1px 1px 0 rgba(255, 255, 255, .4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #f44, 0 0 2px #ff7e00, 0 2px 3px #000;
+ }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+      opacity: 0.4;
+      text-shadow: none;
+ }
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(3);
+    opacity: 0;
+  }
+  12%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  25%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* * Webfont: CoreCircus by S-Core * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved. * Licensed pageviews: 10,000 * * Webfont: CoreCircus2DDot1 by S-Core * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved. * Licensed pageviews: 10,000 */
+@font-face {
+  font-family: 'CoreCircus2DDot1';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'CoreCircus';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');
+}
+ 
+.boton {
+  border-radius: 100%;
+  background-color: #f44;
+  height: 100px;
+  width: 100px;
+}
