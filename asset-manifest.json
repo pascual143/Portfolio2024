@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Portfolio2024/static/css/main.82414027.css",
+    "main.js": "/Portfolio2024/static/js/main.fde5a6ff.js",
+    "static/media/ok.png": "/Portfolio2024/static/media/ok.9180ce43245686117e2c.png",
+    "static/media/profile.jpg": "/Portfolio2024/static/media/profile.f2f1615300b06ed3b94f.jpg",
+    "static/media/tandgo.png": "/Portfolio2024/static/media/tandgo.0f59112543c72af47b60.png",
+    "static/media/memoryGame.png": "/Portfolio2024/static/media/memoryGame.302e83c0616961f94686.png",
+    "static/media/rockpaperscissors.png": "/Portfolio2024/static/media/rockpaperscissors.12a5a7de37d5a5a056be.png",
+    "static/media/WackAMola.png": "/Portfolio2024/static/media/WackAMola.1716e40dc2e2a469bbf5.png",
+    "static/media/connect4.png": "/Portfolio2024/static/media/connect4.3cec64b8f2a900cb9834.png",
+    "static/media/Daft.png": "/Portfolio2024/static/media/Daft.ce07ec56ad7e4132923b.png",
+    "static/media/issue.png": "/Portfolio2024/static/media/issue.c89655d3b75159331f37.png",
+    "static/media/chrono.png": "/Portfolio2024/static/media/chrono.5faff58fbc3166a71d93.png",
+    "index.html": "/Portfolio2024/index.html",
+    "main.82414027.css.map": "/Portfolio2024/static/css/main.82414027.css.map",
+    "main.fde5a6ff.js.map": "/Portfolio2024/static/js/main.fde5a6ff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82414027.css",
+    "static/js/main.fde5a6ff.js"
+  ]
+}
